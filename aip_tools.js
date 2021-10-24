@@ -20,6 +20,8 @@ faceDetect= async function (image,imageType){
         result=await client.detect(image, imageType);
     }
     
+
+    
     return result;
 }
 
