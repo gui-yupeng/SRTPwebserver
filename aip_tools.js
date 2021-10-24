@@ -13,11 +13,13 @@ let client = new AipFaceClient(APP_ID, API_KEY, SECRET_KEY);
 let result=null;
 // 调用人脸检测
 faceDetect= async function (image,imageType){
+    let options = {};
+    options["face_field"] = "age,beauty,gender";
     if(client){
-        result=await client.detect(image, imageType);
+        result=await client.detect(image, imageType, options);
     }else{
         client = new AipFaceClient(APP_ID, API_KEY, SECRET_KEY);
-        result=await client.detect(image, imageType);
+        result=await client.detect(image, imageType, options);
     }
     
 
