@@ -1,5 +1,4 @@
-
-
+//测试接口，查看是否能够通信
 exports.route = {
   //通过GET方法获取参数
   async get() {
