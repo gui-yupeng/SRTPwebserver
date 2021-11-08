@@ -1,0 +1,12 @@
+{
+    "dburl1":"mongodb://dockerfile_database_1/koa",
+    "dbName1":"koa",
+    "col_dayCheck1":"LECTURE_MSG",
+    "col_audience1":"AUDIENCE",
+    "col_admin1":"ADMIN",
+
+
+    "dburl":"mongodb://localhost:27017/SRTP",
+    "dbName":"SRTP",
+    "col_dayCheck":"checkMsg"
+}
