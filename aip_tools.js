@@ -69,14 +69,14 @@ getUser = async function(userId){
     return result;
 }
 
-getGroupUsers = async function(groupId){
+getGroupUsers = async function(){
     let result=null;
     if(client){
-        result=await client.getGroupUsers(groupId)
+        result=await client.getGroupUsers('group_staff')
 
     }else{
         client = new AipFaceClient(APP_ID, API_KEY, SECRET_KEY);
-        result=await client.getGroupUsers(groupId)
+        result=await client.getGroupUsers("group_staff")
     }
     
     return result;
