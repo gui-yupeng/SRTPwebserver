@@ -1,3 +1,5 @@
+//此文件对baidu-aip-sdk进行简单的个性化封装
+//
 var AipFaceClient = require("./baidu-aip-sdk").face;
 
 // 设置APPID/AK/SK
